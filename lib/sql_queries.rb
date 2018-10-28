@@ -22,7 +22,7 @@ AS amount_left
 FROM projects
 JOIN pledges
 ON projects.id = pledges.project_id
-GROUP BY projects.id
+GROUP BY projects.title
 HAVING amount_left > 0"
 end
 
